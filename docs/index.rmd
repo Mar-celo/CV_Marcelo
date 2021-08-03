@@ -54,9 +54,9 @@ datadrivencv::build_network_logo(CV$entries_data)
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _nickstrayer.me/cv/_")
+  cat("Veja este CV online com links em https://mar-celo.github.io/CV_Marcelo/index.html")
 } else {
-  cat("[<i class='fas fa-download'></i> Baixe um PDF deste CV CV](https://github.com/Mar-celo/CV_Marcelo/raw/master/index.pdf)")
+  cat("[<i class='fas fa-download'></i> Baixe um PDF deste CV](https://github.com/Mar-celo/CV_Marcelo/raw/master/index.pdf)")
 }
 ```
 
@@ -66,7 +66,6 @@ Contato {#contact}
 ```{r}
 CV %>% print_contact_info()
 ```
-
 
 
 Linguagens {#skills}
@@ -83,7 +82,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/Mar-celo/CV_Marcelo).
+The source code is available [on github.com/Mar-celo/CV_Marcelo](https://github.com/Mar-celo/CV_Marcelo).
 
 Last updated on `r Sys.Date()`.
 
@@ -124,6 +123,11 @@ Experiência {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ::: aside
+<br>
+<br>
+<br>
+<br>
+<br>
 ```{r}
 CV %<>% print_text_block('industy_experience_aside')
 ```
