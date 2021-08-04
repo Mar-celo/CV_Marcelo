@@ -128,6 +128,7 @@ Experiência {data-icon=suitcase}
 <br>
 <br>
 <br>
+<br>
 ```{r}
 CV %<>% print_text_block('industy_experience_aside')
 ```
