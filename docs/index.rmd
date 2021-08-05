@@ -11,6 +11,27 @@ output:
     self_contained: true
 ---
 
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "Mar-celo/CV_Marcelo") %>% 
+  meta_social(
+    title = "Marcelo Rodrigues Ribeiro's CV",
+    description = paste(
+      "CV made with the packages RMarkdown, pagedown, datadrivencv."
+    ),
+    url = "https://mar-celo.github.io/CV_Marcelo/index.html",
+    #image = "https://beatrizmilz.github.io/resume/img/share-card.png",
+    # image_alt = paste(
+    #   "Beatriz Milz CV"
+    # ),
+    og_type = "website",
+    og_author = "Marcelo Rodrigues Ribeiro"
+    # twitter_card_type = "summary_large_image",
+    # twitter_creator = "@beamilz"
+  )
+```
+
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
   results='asis', 
@@ -80,7 +101,7 @@ CV %>% print_skill_bars()
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown) and [**datadrivencv**](http://nickstrayer.me/datadrivencv/index.html).
 
 The source code is available [on github.com/Mar-celo/CV_Marcelo](https://github.com/Mar-celo/CV_Marcelo).
 
